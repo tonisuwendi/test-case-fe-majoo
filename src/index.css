@@ -1,13 +1,31 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #f7f6f9;
+}
+
+main {
+  margin: 40px auto;
+  width: 900px;
+  min-height: calc(100vh - 280px);
+}
+
+@media screen and (max-width: 950px) {
+  main {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    width: 90%;
+  }
 }

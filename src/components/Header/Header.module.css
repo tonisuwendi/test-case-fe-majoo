@@ -1,0 +1,20 @@
+.header {
+  align-items: center;
+  background-color: #050505;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 50px;
+  width: 100%;
+}
+
+.header h2 {
+  color: white;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 500px){
+  .header {
+    padding: 0 20px;
+  }
+}

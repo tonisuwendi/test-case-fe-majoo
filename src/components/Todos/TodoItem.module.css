@@ -1,0 +1,29 @@
+.todo {
+  margin-top: 20px;
+  padding: 20px 25px;
+  transition: 0.3s;
+}
+
+.todo strong {
+  display: -webkit-box;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.todo p {
+  display: -webkit-box;
+  margin: 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.button-group {
+  display: flex;
+  gap: 7px;
+  margin-top: 10px;
+}

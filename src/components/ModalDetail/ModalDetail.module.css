@@ -1,0 +1,48 @@
+.backdrop {
+  animation: showBackdrop 300ms forwards;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+
+.overlay {
+  animation: showModal 500ms forwards;
+  background-color: white;
+  height: auto;
+  left: 50%;
+  padding: 30px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%,-40%);
+  width: 500px;
+  z-index: 10;
+}
+
+@keyframes showBackdrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showModal {
+  from {
+    transform: translate(-50%, -40%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .overlay {
+    width: 95%;
+  }
+}
